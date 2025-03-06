@@ -1,0 +1,46 @@
+/* Select Question Container */
+.select-question-container {
+    text-align: center;
+    padding: 40px;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    border-radius: 12px;
+    background-color: #f4f4f9;
+    color: #333;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Select Dropdown */
+select {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #007BFF;
+    border-radius: 6px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+    color: #333;
+    margin: 10px 0;
+}
+
+/* Select Question Button */
+.select-question-btn {
+    background-color: #ffc107; /* Yellow */
+    color: #333;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    width: 100%;
+    max-width: 250px;
+    margin-top: 20px;
+}
+
+.select-question-btn:hover {
+    background-color: #e0a800;
+    transform: scale(1.05);
+}

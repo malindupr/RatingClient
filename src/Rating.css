@@ -1,0 +1,253 @@
+/* General styles */
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #141313;
+    color: white !important;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box; /* Add box-sizing */
+}
+
+/* Main container */
+.rating-container {
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    color: white !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Diamond Cutters Limited title */
+h1 {
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+    white-space: nowrap;
+    padding: 0 15px;
+    overflow: visible;
+    text-overflow: ellipsis;
+    color: rgb(121, 100, 100) !important;
+}
+
+/* Are you satisfied with our service? */
+h2 {
+    font-size: 24px;
+    color: white !important;
+    text-align: center;
+    margin: 0;
+}
+
+/* Emoji rating */
+.emoji-rating {
+    font-size: 100px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+/* Hover effect */
+.emoji {
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.emoji:hover {
+    transform: scale(1.2);
+}
+
+/* Admin Button */
+.AdminBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white !important;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.AdminBtn:hover {
+    background-color: #0056b3;
+}
+
+/* Submit Button */
+.SubmitBtn {
+    background-color: #4CAF50;
+    color: white !important;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    width: 50%;
+}
+
+.SubmitBtn:hover {
+    background-color: #45a049;
+}
+
+/* Highlight selected emoji */
+.selected {
+    color: gold !important;
+}
+
+/* Display the rating */
+p {
+    font-size: 18px;
+    margin-top: 10px;
+    color: white !important;
+}
+
+/* Password Prompt Styling */
+.password-prompt {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    z-index: 1000;
+}
+
+.password-prompt input {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 200px;
+    box-sizing: border-box;
+}
+
+.password-prompt button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    box-sizing: border-box;
+}
+
+.password-prompt button:hover {
+    background-color: #45a049;
+}
+
+/* Responsive design for tablets */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 32px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    .emoji-rating {
+        font-size: 80px;
+    }
+    .SubmitBtn {
+        font-size: 14px;
+        padding: 10px 20px;
+        width: 60%;
+    }
+    .AdminBtn {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+    p {
+        font-size: 16px;
+    }
+}
+
+/* Responsive design for mobile phones */
+@media (max-width: 425px) {
+    body {
+        padding: 10px;
+    }
+
+    .rating-container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 24px !important;
+        
+    }
+
+    h2 {
+        font-size: 18px !important;
+    }
+
+    .emoji-rating {
+        font-size: 40px;
+        gap:1px;
+        flex-wrap: wrap;
+    }
+
+    .emoji {
+        margin: 5px;
+    }
+
+    .SubmitBtn {
+        width: 94%;
+        font-size: 16px !important;
+        padding: 12px 24px;
+        margin-top: 20px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .AdminBtn {
+        font-size: 14px;
+        padding: 10px 20px;
+        bottom: 20px;
+        margin-right: 10px !important;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .password-prompt {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .password-prompt input {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 15px;
+    }
+
+    .password-prompt button {
+        width: 100%;
+        padding: 12px 24px;
+        margin: 5px 0;
+    }
+}
